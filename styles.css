@@ -1,0 +1,139 @@
+/* ====== GENERAL ====== */
+body {
+    padding-top: 70px;
+    /* Evita que el contenido quede oculto detrás del navbar */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ====== HERO SECTION ====== */
+.hero-section {
+    background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') center center/cover no-repeat;
+    height: 100vh;
+}
+
+.hero-section h1,
+.hero-section p {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+
+/* ====== NAVBAR & LOGO ====== */
+/* ==== Logo y texto del navbar ==== */
+.brand-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.brand-logo svg {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}
+.brand-text {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: inline;
+    /* Siempre visible */
+    opacity: 1;
+    transition: color 0.3s ease;
+}
+.brand-logo:hover .brand-text {
+    color: #cfa77b;
+    /* cambia color al pasar el mouse */
+}
+
+/* Animación al pasar el mouse o hacer foco */
+.brand-logo:hover,
+.brand-logo:focus {
+    color: #C88B5A;
+    /* tono café suave */
+    text-decoration: none;
+}
+
+
+
+/* efecto de “respiración” en el logo */
+.brand-logo:hover svg {
+    transform: scale(1.1);
+}
+
+/* texto del logo */
+.brand-text {
+    font-weight: 700;
+    font-size: 1.05rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+
+/* ====== MENÚ ====== */
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ====== ABOUT SECTION ====== */
+#about img {
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ====== CONTACT ====== */
+#contact form .btn-primary {
+    background-color: #7A4B2A;
+    border-color: #7A4B2A;
+}
+
+#contact form .btn-primary:hover {
+    background-color: #5e361f;
+    border-color: #5e361f;
+}
+
+/* ====== FOOTER ====== */
+footer {
+    font-size: 0.9rem;
+}
+/* ==== Footer con fondo degradado ==== */
+.footer-redes {
+    background: linear-gradient(135deg, #3e2723, #8d6e63);
+}
+
+/* ==== Botones personalizados ==== */
+.btn-facebook {
+    background-color: #3b5998;
+    border: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.btn-facebook:hover {
+    background-color: #2d4373;
+    transform: scale(1.05);
+}
+
+.btn-instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    border: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.btn-instagram:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+
+/* ==== Texto del footer ==== */
+.footer-redes p {
+    margin-bottom: 10px;
+}
